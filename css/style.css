@@ -1,0 +1,109 @@
+body {
+  background: #87CEFA;
+  overflow: hidden;
+}
+
+.clouds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+[class^="cloud-"] {
+	position: absolute;
+	right: 120%;
+	width: 200px;
+  height: 60px;
+	background: #fff;
+	-webkit-border-radius: 200px;
+	        border-radius: 200px;
+}
+
+[class^="cloud-"]:before,
+[class^="cloud-"]:after {
+	content: '';
+	position: absolute;
+  top: -15px;
+  left: 10px; 
+	width: 100px;
+  height: 80px;
+	background: #fff;
+  -webkit-border-radius: 100px;
+	        border-radius: 100px;
+	-webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+	        transform: rotate(30deg);
+}
+
+[class^="cloud-"]:after {
+  top: -55px;
+  left: auto;
+  right: 15px;
+	width: 120px;
+  height: 120px;
+}
+
+.cloud-1 {
+	top: 50px;
+	-webkit-animation: moveclouds 30s linear infinite;
+	   -moz-animation: moveclouds 30s linear infinite;
+	     -o-animation: moveclouds 30s linear infinite;
+	        animation: moveclouds 30s linear infinite;
+}
+
+.cloud-2 {
+	top: 100px;
+  opacity: 0.8;
+  -webkit-transform: scale(0.8);
+	   -moz-transform: scale(0.8);
+	        transform: scale(0.8);
+	-webkit-animation: moveclouds 45s linear infinite;
+	   -moz-animation: moveclouds 45s linear infinite;
+	     -o-animation: moveclouds 45s linear infinite;
+	     	  animation: moveclouds 45s linear infinite;
+	-webkit-animation-delay: 5s;
+     -moz-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.cloud-3 {
+	top: 150px;
+  opacity: 0.6;
+  -webkit-transform: scale(0.6);
+	   -moz-transform: scale(0.6);
+	        transform: scale(0.6);
+	-webkit-animation: moveclouds 40s linear infinite;
+	   -moz-animation: moveclouds 40s linear infinite;
+	     -o-animation: moveclouds 40s linear infinite;
+	        animation: moveclouds 40s linear infinite;
+}
+
+.cloud-4 {
+	top: 200px;
+  opacity: 0.75;
+  -webkit-transform: scale(0.75);
+	   -moz-transform: scale(0.75);
+	        transform: scale(0.75);
+	-webkit-animation: moveclouds 26s linear infinite;
+	   -moz-animation: moveclouds 26s linear infinite;
+	     -o-animation: moveclouds 26s linear infinite;
+	        animation: moveclouds 26s linear infinite;
+	-webkit-animation-delay: 8s;
+     -moz-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+@-webkit-keyframes moveclouds {
+	0%   { right: -20%; }
+	100% { right: 120%; }
+}
+@-moz-keyframes moveclouds {
+	0%   { right: -20%; }
+	100% { right: 120%; }
+}
+@-o-keyframes moveclouds {
+	0%   { right: -20%; }
+	100% { right: 120%; }
+}
